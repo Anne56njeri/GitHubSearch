@@ -5,7 +5,8 @@ import { AppComponent } from './app.component';
 import { GithubFormComponent } from './github-form/github-form.component';
 import{BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { GithubService } from './github.service';
-import{HttpModule} from '@angular/http';
+import{HttpModule } from '@angular/http';
+import {HttpClientModule } from '@angular/common/http';
 import {NgProgressModule } from  '@ngx-progressbar/core';
 import {NgProgressHttpModule } from '@ngx-progressbar/http';
 
@@ -19,6 +20,7 @@ import {NgProgressHttpModule } from '@ngx-progressbar/http';
     FormsModule,
     BrowserAnimationsModule,
     HttpModule,
+    HttpClientModule,
     NgProgressModule.forRoot(),
     NgProgressHttpModule
   ],
