@@ -126,11 +126,11 @@ MIT
 MIT
 MIT
 
-@angular/common@5.2.9
+@angular/http@5.2.9
 MIT
 MIT
 
-@angular/http@5.2.9
+@angular/common@5.2.9
 MIT
 MIT
 
