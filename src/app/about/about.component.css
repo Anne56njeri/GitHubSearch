@@ -22,7 +22,15 @@ p{
   background-color: yellow;
 }
 img{
-  border-radius:50%;
-  float: right;
-  height:100px;
+  float:;
+  height: 100px;
+  border-radius: 50%;
+
+}
+.here{
+  height: 100px;
+  border-radius: 60%;
+  width:100px;
+ 
+
 }
