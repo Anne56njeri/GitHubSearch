@@ -1,27 +1,19 @@
-# Github
+# Github Search
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
+An application build with angular
 
-## Development server
+## Author Name
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+MaryAnne Njeri
 
-## Code scaffolding
+## Description of the project
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+The GitHubSearch app is build using angular, the app also incorporates the use of an API as a result we are able to acquire information from the github serve. The app also makes use of services to enable the app to use the API. Furthermore this app also uses a route that takes the user to an about page of the app.
+It has a custom made style sheet.
 
-## Build
+## Project Setup Instruction
+In order to be able to access the project the link has been provided below.
+ https://anne56njeri.github.io/GitHubSearch/
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## CopyRight License
+here
