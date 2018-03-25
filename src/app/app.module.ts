@@ -3,8 +3,9 @@ import { NgModule } from '@angular/core';
 import {FormsModule} from '@angular/forms';
 import { AppComponent } from './app.component';
 import { GithubFormComponent } from './github-form/github-form.component';
-import{BrowserAnimationsModule} from '@angular/platform-browser/animations'
-
+import{BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { GithubService } from './github.service';
+import{HttpModule} from '@angular/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -13,9 +14,10 @@ import{BrowserAnimationsModule} from '@angular/platform-browser/animations'
   imports: [
     BrowserModule,
     FormsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpModule
   ],
-  providers: [],
+  providers: [GithubService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

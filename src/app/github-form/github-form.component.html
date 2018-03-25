@@ -1,20 +1,51 @@
-<div class="container-fluid">
-    <div class="row">
-        <form>
-            <div class="form-group">
-
-                <label for="name">User Name</label>
-                <input type="text" required class="form-control" id="name">
-
-            </div>
-
-              <div class="form-group">
-
-                <label for="name">Repository Name</label>
-
-                <input type="text" required class="form-control" id="name">
-
-            </div>
-          </form>
+<form action="" class="search-form">
+  <div class="form-group">
+    <input type="text" class="form-control" placeholder="search git users with usersname" [(ngModel)]="username"  name="username" (keyup)="getProfile()">
+  </div>
+</form>
+  <div *ngIf="profo">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        {{profo.name}}<small>({{profo.login}})</small>
+        <span  *ngIf=profo.company>,Works at{{profo.company}}</span>
+        {{profo.location}}
+      </div>
+      <div class="panel-body">
+        <div class="row">
+          <div class="col-sm-3">
+            <img src="{{profo.avatar_url}}" class="img-circle img responsive" alt="Profile Image">
           </div>
-        </div>
+          <div class="col-sm-5">
+            <ul class="list-group">
+              <li class="list-group-item" *ngIf="profo.bio">{{profo.bio}}</li>
+              <li class="list-group-item" *ngIf="profo.hireable">Available for Hire</li>
+              <li class="list-group-item" *ngIf="profo.blog"><a href="{{profo.blog}}" target ="_blank">{{profo.blog}}</a></li>
+              <li class="list-group-item" *ngIf="profo.email"><a href="emailto:{{profo.email}}">{{profo.email}}</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-4">
+            <div>
+              <p>
+                <span class="label label-default">{{profo.followers}}Followers</span>
+                <span class="label label-primary">Following{{profo.following}}</span>
+                <span class="label label-success">{{profo.public_gists}}Public gists</span>
+                <span class="label label-info">{{profo.public_repo}}Public Repo</span>
+              </p>
+              <p><a href="{{profo.html_url}}" target="_blank" class="btn btn-sucess btn-sm">View Profile on github</a></p>
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Repo</h3>
+                </div>
+                <div class="panel-body" *ngFor="let repo of repo">
+                  <p class="clearfix">
+                    {{repo.name}} <a href="{{repo.html}}" target="_blank" class="btn btn-sm btn-warning pull-right">View this project on github</a>
+                  </p>
+                  <p>{{repo.description}}</p>
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>

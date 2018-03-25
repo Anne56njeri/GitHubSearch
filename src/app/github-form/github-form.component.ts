@@ -8,17 +8,17 @@ import {GithubService} from'../github.service'
 export class GithubFormComponent implements OnInit {
   profo:any[];
   repo:any[];
-  username:string
+  username:string;
 
   constructor(private githubservice: GithubService) { }
   getProfile(){
     this.githubservice.update(this.username)
     this.githubservice.getProfInfo().subscribe(profo => {
-      console.log(profo);
+
       this.profo=profo;
     })
     this.githubservice.getProfRepo().subscribe(repo => {
-      console.log(repo);
+      
       this.repo=repo;
     })
   }
