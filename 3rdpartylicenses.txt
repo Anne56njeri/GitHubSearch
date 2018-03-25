@@ -130,6 +130,14 @@ MIT
 MIT
 MIT
 
+@ngx-progressbar/core@4.1.1
+MIT
+MIT
+
+@ngx-progressbar/http@4.1.1
+MIT
+MIT
+
 @angular/common@5.2.9
 MIT
 MIT
