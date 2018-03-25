@@ -142,6 +142,10 @@ MIT
 MIT
 MIT
 
+@angular/router@5.2.9
+MIT
+MIT
+
 @angular/animations@5.2.9
 MIT
 MIT

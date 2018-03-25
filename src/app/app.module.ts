@@ -9,11 +9,17 @@ import{HttpModule } from '@angular/http';
 import {HttpClientModule } from '@angular/common/http';
 import {NgProgressModule } from  '@ngx-progressbar/core';
 import {NgProgressHttpModule } from '@ngx-progressbar/http';
+import { AboutComponent } from './about/about.component';
+import {RouterModule,Routes } from '@angular/router';
 
+const routes:Routes=[
+  {path:"about",component:AboutComponent}
+]
 @NgModule({
   declarations: [
     AppComponent,
-    GithubFormComponent
+    GithubFormComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
@@ -22,7 +28,8 @@ import {NgProgressHttpModule } from '@ngx-progressbar/http';
     HttpModule,
     HttpClientModule,
     NgProgressModule.forRoot(),
-    NgProgressHttpModule
+    NgProgressHttpModule,
+    RouterModule.forRoot(routes)
   ],
   providers: [GithubService ],
   bootstrap: [AppComponent]
