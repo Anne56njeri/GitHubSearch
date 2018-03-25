@@ -6,8 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about.component.css']
 })
 export class AboutComponent implements OnInit {
-
-  constructor() { }
+fullImagePath: string;
+  constructor() {
+  this.fullImagePath= '../assets/images/wonder.jpg'}
 
   ngOnInit() {
   }
