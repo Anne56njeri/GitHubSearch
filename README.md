@@ -16,4 +16,4 @@ In order to be able to access the project the link has been provided below.
  https://anne56njeri.github.io/GitHubSearch/
 
 ## CopyRight License
-here
+GPL
