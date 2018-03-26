@@ -11,6 +11,8 @@ import {NgProgressModule } from  '@ngx-progressbar/core';
 import {NgProgressHttpModule } from '@ngx-progressbar/http';
 import { AboutComponent } from './about/about.component';
 import {RouterModule,Routes } from '@angular/router';
+import { UpperPipe } from './upper.pipe';
+
 
 const routes:Routes=[
   {path:"about",component:AboutComponent}
@@ -19,7 +21,8 @@ const routes:Routes=[
   declarations: [
     AppComponent,
     GithubFormComponent,
-    AboutComponent
+    AboutComponent,
+    UpperPipe
   ],
   imports: [
     BrowserModule,
