@@ -18,7 +18,7 @@ export class GithubFormComponent implements OnInit {
       this.profo=profo;
     })
     this.githubservice.getProfRepo().subscribe(repo => {
-      
+
       this.repo=repo;
     })
   }
