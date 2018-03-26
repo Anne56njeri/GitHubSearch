@@ -12,8 +12,8 @@ hereImage:string;
 
   constructor() {
 
-  this.secondImage='../assets/images/emoji3.jpg'
-  this.hereImage='../assets/images/wonder3.jpg'
+  this.secondImage='/assets/images/emoji3.jpg'
+  this.hereImage='/assets/images/wonder3.jpg'
 
 }
   ngOnInit() {
