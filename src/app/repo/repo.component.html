@@ -1,0 +1,29 @@
+
+
+  
+      <div class="panel-heading">
+        <h3 class="panel-title">Repo</h3>
+      </div>
+
+      <form action="" class="search-repo">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="search for the repo by typing the gituser" [(ngModel)]="username"  name="username"(keyup)="getProfile()">
+        </div>
+      </form>
+      <div class="panel-body" *ngFor="let repo of repo">
+        <p class="clearfix">
+          {{repo.name|upper}} <a href="{{repo.html}}" target="_blank" class="btn btn-sm btn-warning pull-right">View this project on github</a>
+        </p>
+        <p>{{repo.description|upper}}</p>
+      </div>
+      <div *ngIf="profo">
+        <p>
+          <span class="label label-default">{{profo.followers}} Followers</span>
+          <span class="label label-primary">{{profo.following}} Following</span>
+          <span class="label label-success">{{profo.public_gists}} Public gists</span>
+          <span class="label label-info">{{profo.public_repo}} Public Repo</span>
+        </p>
+        <p><a href="{{profo.html_url}}" target="_blank" class="btn btn-sucess btn-sm">View Profile on github</a></p>
+        <div class="panel panel-default">
+        </div>
+      </div>

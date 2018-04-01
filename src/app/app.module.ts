@@ -10,19 +10,19 @@ import {HttpClientModule } from '@angular/common/http';
 import {NgProgressModule } from  '@ngx-progressbar/core';
 import {NgProgressHttpModule } from '@ngx-progressbar/http';
 import { AboutComponent } from './about/about.component';
-import {RouterModule,Routes } from '@angular/router';
+
 import { UpperPipe } from './upper.pipe';
+import { RepoComponent } from './repo/repo.component';
+import {RoutingModule} from './routing/routing.module'
 
 
-const routes:Routes=[
-  {path:"about",component:AboutComponent}
-]
 @NgModule({
   declarations: [
     AppComponent,
     GithubFormComponent,
     AboutComponent,
-    UpperPipe
+    UpperPipe,
+    RepoComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +32,7 @@ const routes:Routes=[
     HttpClientModule,
     NgProgressModule.forRoot(),
     NgProgressHttpModule,
-    RouterModule.forRoot(routes)
+    RoutingModule,
   ],
   providers: [GithubService ],
   bootstrap: [AppComponent]
